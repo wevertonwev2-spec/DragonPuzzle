@@ -1,0 +1,26 @@
+extends Node2D
+
+const ROWS = 6
+const COLS = 6
+var grid = [] # matriz de ids de heróis
+
+func _ready():
+    _criar_grid()
+
+func _criar_grid():
+    grid.resize(ROWS)
+    for r in ROWS:
+        grid[r] = []
+        for c in COLS:
+            grid[r].append(randi() % 6) # 6 tipos de herói como exemplo
+
+func trocar(pos_a: Vector2, pos_b: Vector2):
+    var tmp = grid[pos_a.y][pos_a.x]
+    grid[pos_a.y][pos_a.x] = grid[pos_b.y][pos_b.x]
+    grid[pos_b.y][pos_b.x] = tmp
+    _verificar_matches()
+
+func _verificar_matches():
+    # implementação simples: procurar linhas/colunas de 3 ou mais
+    # (aqui é apenas um comentário — implemente conforme quiser)
+    pass
