@@ -1,0 +1,19 @@
+DragonPuzzle/
+├─ .gitignore
+├─ README.md
+├─ project.godot
+├─ icon.png
+├─ scenes/
+│  ├─ Main.tscn
+│  └─ Game.tscn
+├─ scripts/
+│  ├─ main.gd
+│  └─ game.gd
+├─ assets/
+│  ├─ sprites/
+│  │  ├─ goku.png
+│  │  └─ vegeta.png
+│  └─ audio/
+│     └─ bgm.ogg
+└─ exports/
+   └─ (apk gerado será salvo aqui)
