@@ -1,0 +1,7 @@
+extends Node2D
+
+func _ready():
+    print("DragonPuzzle: pronto")
+    # carregar cena de jogo
+    var game = preload("res://scenes/Game.tscn").instantiate()
+    add_child(game)
